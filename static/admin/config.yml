@@ -16,11 +16,8 @@ collections:
       preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      # - { label: "Publish Date", name: "date", widget: "datetime" }
-      - {
-          label: "Featured Image",
-          name: "thumbnail",
-          widget: "image",
-        }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Link", name: "link", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Tipologia", name: "type", widget: "select", options: ["dolce", "salato"] }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
