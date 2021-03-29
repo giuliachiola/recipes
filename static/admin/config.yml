@@ -15,9 +15,9 @@ collections:
     editor:
       preview: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Link", name: "link", widget: "string", required: true }
       - { label: "Tags", name: "tags", widget: "string" }
-      - { label: "Tipologia", name: "type", widget: "select", options: ["dolce", "salato"] }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Tipologia", name: "type", widget: "select", options: ["dolce", "salato"], required: true }
+      - { label: "Immagine", name: "thumbnail", widget: "string" }

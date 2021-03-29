@@ -4,7 +4,10 @@ export const state = () => ({
 
 export const mutations = {
   setBlogPosts(state, list) {
-    state.blogPosts = list;
+    state.blogPosts = list.map(el => ({
+      ...el,
+      tags: tags.split(',').map(el => el.trim())
+    }));
   }
 };
 
