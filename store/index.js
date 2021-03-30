@@ -6,7 +6,8 @@ export const mutations = {
   setBlogPosts(state, list) {
     state.blogPosts = list.map(el => ({
       ...el,
-      tags: tags.split(',').map(el => el.trim())
+      // remove empty strings and spaces between keywords
+      tags: el.tags ? el.tags.split(',').map(el => el.trim()).filter(el => el) : []
     }));
   }
 };
