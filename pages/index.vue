@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>Blog Posts</h1>
-    <div class="blogs">
-      <ul class="blog" v-for="blog in posts" :key="blog.slug">
-        <li class="blog__title">
-          <nuxt-link :to="`/posts/${blog.slug}`">
-            <h2>{{ blog.title }}</h2>
+    <h1>Posts</h1>
+    <div class="posts">
+      <ul class="post" v-for="post in posts" :key="post.slug">
+        <li class="post__title">
+          <nuxt-link :to="`/posts/${post.slug}`">
+            <h2>{{ post.title }}</h2>
           </nuxt-link>
         </li>
       </ul>

@@ -1,31 +1,31 @@
 <template>
-  <div class="blog">
-    <img v-bind:src="blogPost.thumbnail" class="blog__featured-img" />
-    <h1 class="blog__title">{{blogPost.title}}</h1>
-    <div class="blog__date">{{blogPost.date}}</div>
-    <div class="blog__body" v-html="$md.render(blogPost.body)"></div>
+  <div class="post">
+    <img v-bind:src="post.thumbnail" class="post__featured-img" />
+    <h1 class="post__title">{{post.title}}</h1>
+    <div class="post__date">{{post.date}}</div>
+    <div class="post__body" v-html="$md.render(post.body)"></div>
   </div>
 </template>
 
 <script>
 export default {
-  // Fetching Single BlogPost
+  // Fetching Single post
   async asyncData({ params, payload }) {
-    if (payload) return { blogPost: payload };
+    if (payload) return { post: payload };
     else
       return {
-        blogPost: await require(`~/assets/content/posts/${params.id}.json`)
+        post: await require(`~/assets/content/posts/${params.id}.json`)
       };
   }
 };
 </script>
 
 <style>
-.blog {
+.post {
   max-width: 800px;
   margin: 2rem auto;
 }
-.blog__featured-img {
+.post__featured-img {
   width: 100%;
   height: auto;
 }
