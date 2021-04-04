@@ -1,10 +1,10 @@
 export const state = () => ({
-  blogPosts: []
+  posts: []
 });
 
 export const mutations = {
-  setBlogPosts(state, list) {
-    state.blogPosts = list.map(el => ({
+  setPosts(state, list) {
+    state.posts = list.map(el => ({
       ...el,
       // remove empty strings and spaces between keywords
       tags: el.tags ? el.tags.split(',').map(el => el.trim()).filter(el => el) : []
@@ -15,15 +15,15 @@ export const mutations = {
 export const actions = {
   async nuxtServerInit({ commit }) {
     let files = await require.context(
-      "~/assets/content/blog/",
+      "~/assets/content/posts/",
       false,
       /\.json$/
     );
-    let blogPosts = files.keys().map(key => {
+    let posts = files.keys().map(key => {
       let res = files(key);
       res.slug = key.slice(2, -5);
       return res;
     });
-    await commit("setBlogPosts", blogPosts);
+    await commit("setPosts", posts);
   }
 };
