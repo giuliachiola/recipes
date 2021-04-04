@@ -4,7 +4,7 @@
     <div class="blogs">
       <ul class="blog" v-for="blog in posts" :key="blog.slug">
         <li class="blog__title">
-          <nuxt-link :to="`/blog/${blog.slug}`">
+          <nuxt-link :to="`/posts/${blog.slug}`">
             <h2>{{ blog.title }}</h2>
           </nuxt-link>
         </li>
