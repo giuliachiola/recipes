@@ -2,10 +2,37 @@
  * GLOBAL
  */
 
+/**
+ * Colors
+ */
+
+// $color-1: #FF7B00;
+// $color-2: #FF9500;
+// $color-3: #FFC300;
+// $color-4: #FFEA00;
+
+$color-main: #F7CB71;
+$color-light: #FFF;
+$color-dark: #373737;
+
+body {
+  background-color: $color-main;
+  color: $color-dark;
+
+  a {
+    color: inherit;
+  }
+}
+
 .o-wrapper {
-  width: 90%;
-  max-width: 1024px;
-  margin: 0 auto;
+  padding: 0 20px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 // list reset
@@ -15,3 +42,9 @@
 	padding-left: 0;
 	margin: 0;
 }
+
+/**
+ * SPACING
+ */
+
+$space-m: 16px;
