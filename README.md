@@ -8,7 +8,9 @@ This project is a place to save the recipes that I have tried and liked. Here I 
 | Deploy preview   | https://ricettine.netlify.app/                                                                                                                                 |
 | Project typology | Personal                                                                                                                                                       |
 
-![project preview](docs/project-preview.png)
+![project preview 1](docs/project-preview-1.png)
+![project preview 2](docs/project-preview-2.png)
+![project preview 3](docs/project-preview-3.png)
 
 ## 🔥 Tech stack
 
