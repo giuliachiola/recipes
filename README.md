@@ -1,20 +1,49 @@
-# ricettine
+# Recipes (⚠️ WIP)
 
-## Build Setup
+This project is a place to save the recipes that I have tried and liked. Here I can also write in the CMS the changes to the recipes I have made.
 
-```bash
+| \                | \                                                                                                                                                              |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pipeline         | [![Netlify Status](https://api.netlify.com/api/v1/badges/0e8d571e-f8b6-477d-b394-8ad3f7fceb32/deploy-status)](https://app.netlify.com/sites/ricettine/deploys) |
+| Deploy preview   | https://ricettine.netlify.app/                                                                                                                                 |
+| Project typology | Personal                                                                                                                                                       |
+
+![project preview](docs/project-preview.png)
+
+## 🔥 Tech stack
+
+| Purpose               | Technology   |
+|:----------------------|:-------------|
+| Templating            | VueJS        |
+| Styling               | SCSS + BEMIT |
+| Documentation         | Markdown     |
+| Server Side Rendering | NuxtJS       |
+
+## 🌊 Run development mode
+
+```shell
 # install dependencies
-$ npm install
+npm i
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+# serve with hot reload at localhost:8080
+npm run dev
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## 🧳 Build setup
+
+Build for production and launch server
+
+```shell
+# build for production and launch server
+npm run build
+npm run start
+
+# generate static project
+npm run generate
+```
+
+### 🌿 Branches
+
+| Branch name | Use        |
+|:------------|:-----------|
+| `main`      | production |
