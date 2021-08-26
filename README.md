@@ -4,7 +4,7 @@ This project is a place to save the recipes that I have tried and liked. Here I 
 
 | \                | \                                                                                                                                                              |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Pipeline         | [![Netlify Status](https://api.netlify.com/api/v1/badges/0e8d571e-f8b6-477d-b394-8ad3f7fceb32/deploy-status)](https://app.netlify.com/sites/ricettine/deploys) |
+| Deploy status	         | [![Netlify Status](https://api.netlify.com/api/v1/badges/0e8d571e-f8b6-477d-b394-8ad3f7fceb32/deploy-status)](https://app.netlify.com/sites/ricettine/deploys) |
 | Deploy preview   | https://ricettine.netlify.app/                                                                                                                                 |
 | Project typology | Personal                                                                                                                                                       |
 
